@@ -27,9 +27,9 @@ var chord = d3.layout.chord()
     .sortSubgroups(d3.descending)
     .matrix(matrix);
 
-var width = 960,
-    height = 500,
-    innerRadius = Math.min(width, height) * .41,
+var width = 1000,
+    height = 1000,
+    innerRadius = Math.min(width-40, height-40) * .41,
     outerRadius = innerRadius * 1.1;
 
 var fill = d3.scale.ordinal()
@@ -105,5 +105,5 @@ function fade(opacity) {
   };
 }
 
-}
+})
 </script>
